@@ -20,21 +20,21 @@ app.use(express.static(publicStaticDirPath));
 app.get('/',(req,res)=>{
     res.render('index',{
         title : 'WEATHER APP',
-        name : 'PAWAN KUMAR'
+        name : 'VIKAS CHAUDHARY'
     })
 });
 
 app.get('/about',(req,res)=>{
     res.render('about',{
         title : 'ABOUT',
-        name : 'PAWAN KUMAR'
+        name : 'VIKAS CHAUDHARY'
     })
 });
 
 app.get('/contact',(req,res)=>{
     res.render('contact',{
         title : 'CONTACT US',
-        name : 'PAWAN KUMAR'
+        name : 'VIKAS CHAUDHARY'
     })
 })
 
@@ -42,7 +42,7 @@ app.get('/contact',(req,res)=>{
 app.get('/formsubmitted',(req,res)=>{
     res.render('formsubmitted',{
         title : 'Thanks!',
-        name : 'PAWAN KUMAR'
+        name : 'VIKAS CHAUDHARY'
     })
 })
 
@@ -77,9 +77,9 @@ app.get('/weather', (req,res)=>{
 
 app.get('*',(req,res)=>{ 
     res.render('404',{
-        title : "ERROR 404",
+        title : "ERROR  404",
         error : "PAGE NOT FOUND",
-        name : "PAWAN KUMAR"
+        name : "VIKAS CHAUDHARY"
     })
 })
 
